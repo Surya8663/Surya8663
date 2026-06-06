@@ -1,0 +1,89 @@
+name: 📊 Generate Stats Cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # Daily at 3 AM UTC
+  workflow_dispatch:        # Allow manual trigger anytime
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Stats Card ──────────────────────────────────────────────────────
+      - name: Generate stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: >
+            username=Surya8663
+            &show_icons=true
+            &count_private=true
+            &include_all_commits=true
+            &hide_border=true
+            &bg_color=0a0f1e
+            &title_color=4A9EFF
+            &icon_color=4A9EFF
+            &text_color=8b9dc3
+            &rank_icon=github
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Top Languages Card ───────────────────────────────────────────────
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: >
+            username=Surya8663
+            &layout=compact
+            &langs_count=7
+            &hide_border=true
+            &bg_color=0a0f1e
+            &title_color=4A9EFF
+            &text_color=8b9dc3
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Streak Stats (curl approach — reliable) ──────────────────────────
+      - name: Generate streak stats
+        run: |
+          curl -s "https://streak-stats.demolab.com/?user=Surya8663&theme=github-dark-blue&hide_border=true&background=0a0f1e&stroke=1e2433&ring=4A9EFF&fire=FF6B6B&currStreakLabel=4A9EFF&sideLabels=8b9dc3&currStreakNum=ffffff&sideNums=c9d1d9&dates=4a5568&type=svg" \
+            -H "Accept: image/svg+xml" \
+            -L --max-time 30 \
+            -o profile/streak.svg || echo "Streak fetch failed, keeping existing"
+
+      # ── Activity Graph (curl approach) ───────────────────────────────────
+      - name: Generate activity graph
+        run: |
+          curl -s "https://github-readme-activity-graph.vercel.app/graph?username=Surya8663&bg_color=0a0f1e&color=8b9dc3&line=1e2433&point=4A9EFF&area=true&area_color=4A9EFF&hide_border=true&radius=4" \
+            -H "Accept: image/svg+xml" \
+            -L --max-time 30 \
+            -o profile/activity.svg || echo "Activity fetch failed, keeping existing"
+
+      # ── Trophies (curl approach) ─────────────────────────────────────────
+      - name: Generate trophies
+        run: |
+          curl -s "https://github-profile-trophy.vercel.app/?username=Surya8663&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" \
+            -H "Accept: image/svg+xml" \
+            -L --max-time 30 \
+            -o profile/trophies.svg || echo "Trophy fetch failed, keeping existing"
+
+      # ── Commit all generated SVGs ────────────────────────────────────────
+      - name: Commit stats SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/
+          git diff --quiet && git diff --staged --quiet || \
+            git commit -m "chore: update stats cards [skip ci]"
+          git push
