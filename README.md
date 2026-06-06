@@ -27,9 +27,9 @@
 <tr>
 <td width="38%" align="center" valign="middle">
 
-<!-- FIX: Using GitHub's own avatar API — never 404s, always current -->
+<!-- Avatar: Using jsDelivr CDN for reliable, fast delivery -->
 <img
-  src="https://avatars.githubusercontent.com/u/Surya8663?v=4"
+  src="https://cdn.jsdelivr.net/gh/Surya8663/Surya8663@main/assets/avatar.png"
   width="220"
   style="border-radius: 16px;"
   alt="G. Surya — GenAI Developer"
