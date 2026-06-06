@@ -1,16 +1,18 @@
 <!--
 ╔══════════════════════════════════════════════════════════════╗
-║              G. SURYA — GITHUB PROFILE v3.1                  ║
-║         [ FIXED · ALL STATS SELF-HOSTED IN REPO ]            ║
+║              G. SURYA — GITHUB PROFILE v3.0                  ║
+║         [ CINEMATIC · EDITORIAL · PRODUCTION GRADE ]         ║
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
 <div align="center">
 
+<!-- ░░ CINEMATIC HEADER ░░ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:060810,50:0a0f1e,100:060810&height=3&section=header" width="100%"/>
 
 <br/>
 
+<!-- ░░ ANIMATED TYPING — MINIMAL, PRECISE ░░ -->
 <a href="https://git.io/typing-svg">
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=13&duration=2500&pause=800&color=4A9EFF&center=true&vCenter=true&repeat=true&width=500&height=24&lines=%3E+init+surya.genai_developer()...;%3E+loading+multi_agent_systems...;%3E+deploying+rag_pipelines+to+prod...;%3E+status%3A+BUILDING+%E2%9C%93" alt="init" />
 </a>
@@ -19,23 +21,26 @@
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 <!--                    HERO — IMAGE + IDENTITY                  -->
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tr>
 <td width="38%" align="center" valign="middle">
 
+<!-- AVATAR WITH ANIMATED GLOW RING — using jsDelivr CDN for faster delivery -->
 <img
-  src="https://raw.githubusercontent.com/Surya8663/Surya8663/main/assets/avatar-glow.svg"
+  src="https://cdn.jsdelivr.net/gh/Surya8663/Surya8663@main/assets/avatar.png"
   width="260"
+  style="border-radius: 16px;"
   alt="G. Surya — GenAI Developer"
 />
 
 <br/><br/>
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/g-surya-63a01b290)&nbsp;
+<!-- SOCIAL ROW -->
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0A66C2)](https://www.linkedin.com/in/g-surya-63a01b290)&nbsp;
 [![Gmail](https://img.shields.io/badge/-Mail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:iamsurya195@gmail.com)&nbsp;
 [![Portfolio](https://img.shields.io/badge/-Portfolio-111827?style=flat-square&logo=googlechrome&logoColor=white)](https://surya8663.github.io)
 
@@ -85,9 +90,9 @@ surya = {
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 <!--                      FEATURED PROJECTS                      -->
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
 ## &nbsp;`// Projects`
 
@@ -118,7 +123,7 @@ surya = {
 
 **AI Job Application Suite**
 
-<sub>Resume tailoring, cover letter gen & interview prep from one job description. Multi-agent CrewAI pipeline.</sub>
+<sub>Resume tailoring, cover letter gen & interview prep from one job description. Multi-agent CrewAI pipeline with parallel execution.</sub>
 
 <br/>
 
@@ -134,7 +139,7 @@ surya = {
 
 **SecurePulse**
 
-<sub>Real-time threat detection with AI-assisted anomaly surfacing, vulnerability scanning, and live analytics dashboard.</sub>
+<sub>Real-time threat detection platform with AI-assisted anomaly surfacing, vulnerability scanning, and live analytics dashboard.</sub>
 
 <br/>
 
@@ -150,7 +155,7 @@ surya = {
 
 **Story Teller AI**
 
-<sub>Narrative engine for immersive multi-genre stories. Dynamic world-building, evolving characters, branching plots via NLP.</sub>
+<sub>Narrative engine for immersive multi-genre stories. Dynamic world-building, evolving characters, branching plots — powered by NLP.</sub>
 
 <br/>
 
@@ -169,55 +174,33 @@ surya = {
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--        STATS — ALL SERVED FROM YOUR OWN REPO (NO BREAKS)   -->
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!--                       GITHUB STATS                          -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
 ## &nbsp;`// Stats`
 
-<!--
-  ⚠️  These images are generated daily by GitHub Actions (.github/workflows/stats.yml)
-      and committed to the profile/ folder in this repo.
-      They NEVER hit an external rate-limited API — so they always load.
--->
-
 <div align="center">
 
-<img
-  height="175"
-  src="./profile/stats.svg"
-  alt="GitHub Stats"
-/>
+<img height="175" src="https://github-readme-stats.vercel.app/api?username=Surya8663&show_icons=true&hide_border=true&bg_color=0a0f1e&title_color=4A9EFF&icon_color=4A9EFF&text_color=8b9dc3&count_private=true&include_all_commits=true&rank_icon=github&hide_title=false&custom_title=GitHub+Activity" />
 &nbsp;
-<img
-  height="175"
-  src="./profile/top-langs.svg"
-  alt="Top Languages"
-/>
+<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Surya8663&layout=compact&hide_border=true&bg_color=0a0f1e&title_color=4A9EFF&text_color=8b9dc3&langs_count=7&custom_title=Languages" />
 
 <br/><br/>
 
-<img
-  width="62%"
-  src="./profile/streak.svg"
-  alt="GitHub Streak"
-/>
+<img width="62%" src="https://streak-stats.demolab.com?user=Surya8663&theme=github-dark-blue&hide_border=true&background=0a0f1e&stroke=1e2433&ring=4A9EFF&fire=FF6B6B&currStreakLabel=4A9EFF&sideLabels=8b9dc3&currStreakNum=ffffff&sideNums=c9d1d9&dates=4a5568" />
 
 <br/><br/>
 
-<img
-  width="92%"
-  src="./profile/activity.svg"
-  alt="Contribution Timeline"
-/>
+<img width="92%" src="https://github-readme-activity-graph.vercel.app/graph?username=Surya8663&bg_color=0a0f1e&color=8b9dc3&line=1e2433&point=4A9EFF&area=true&area_color=4A9EFF&hide_border=true&radius=4&custom_title=Contribution+Timeline" />
 
 </div>
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 <!--                    EXPERIENCE TIMELINE                      -->
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
 ## &nbsp;`// Experience`
 
@@ -245,9 +228,9 @@ surya = {
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 <!--                      CERTIFICATIONS                         -->
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
 ## &nbsp;`// Certifications`
 
@@ -265,23 +248,23 @@ surya = {
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--             TROPHIES — ALSO SELF-HOSTED SVG                -->
-<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!--                         TROPHIES                            -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
 ## &nbsp;`// Trophies`
 
 <div align="center">
 
-<img
-  src="./profile/trophies.svg"
-  width="100%"
-  alt="GitHub Trophies"
-/>
+<img src="https://github-profile-trophy.vercel.app/?username=Surya8663&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" width="100%" />
 
 </div>
 
 ---
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!--                         FOOTER                              -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
 <br/>
 
