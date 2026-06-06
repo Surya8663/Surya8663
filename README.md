@@ -1,18 +1,16 @@
 <!--
 ╔══════════════════════════════════════════════════════════════╗
-║              G. SURYA — GITHUB PROFILE v3.0                  ║
+║              G. SURYA — GITHUB PROFILE v4.0                  ║
 ║         [ CINEMATIC · EDITORIAL · PRODUCTION GRADE ]         ║
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
 <div align="center">
 
-<!-- ░░ CINEMATIC HEADER ░░ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:060810,50:0a0f1e,100:060810&height=3&section=header" width="100%"/>
 
 <br/>
 
-<!-- ░░ ANIMATED TYPING — MINIMAL, PRECISE ░░ -->
 <a href="https://git.io/typing-svg">
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=13&duration=2500&pause=800&color=4A9EFF&center=true&vCenter=true&repeat=true&width=500&height=24&lines=%3E+init+surya.genai_developer()...;%3E+loading+multi_agent_systems...;%3E+deploying+rag_pipelines+to+prod...;%3E+status%3A+BUILDING+%E2%9C%93" alt="init" />
 </a>
@@ -29,17 +27,16 @@
 <tr>
 <td width="38%" align="center" valign="middle">
 
-<!-- AVATAR WITH ANIMATED GLOW RING — using jsDelivr CDN for faster delivery -->
+<!-- FIX: Using GitHub's own avatar API — never 404s, always current -->
 <img
-  src="https://cdn.jsdelivr.net/gh/Surya8663/Surya8663@main/assets/avatar.png"
-  width="260"
+  src="https://avatars.githubusercontent.com/u/Surya8663?v=4"
+  width="220"
   style="border-radius: 16px;"
   alt="G. Surya — GenAI Developer"
 />
 
 <br/><br/>
 
-<!-- SOCIAL ROW -->
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0A66C2)](https://www.linkedin.com/in/g-surya-63a01b290)&nbsp;
 [![Gmail](https://img.shields.io/badge/-Mail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:iamsurya195@gmail.com)&nbsp;
 [![Portfolio](https://img.shields.io/badge/-Portfolio-111827?style=flat-square&logo=googlechrome&logoColor=white)](https://surya8663.github.io)
@@ -52,7 +49,7 @@
 
 <h1>G. Surya</h1>
 
-**`Product GenAI Developer Intern`** at **[HiDevs](https://www.linkedin.com/company/hidevs-community/)** · SF Bay Area
+**`Product GenAI Developer Intern`** at **[HiDevs](https://www.linkedin.com/company/hidevs-community/)** · Bengaluru, India
 
 > *Building the layer between raw LLMs and the real world — agentic systems that reason, route, and ship.*
 
@@ -96,6 +93,8 @@ surya = {
 
 ## &nbsp;`// Projects`
 
+<!-- FIX: Every card now follows: Problem → What I built → Result/Impact -->
+
 <table border="0" cellpadding="12" cellspacing="0" width="100%">
 <tr>
 
@@ -107,7 +106,7 @@ surya = {
 
 **GenAI Multi-Agent Chatbot**
 
-<sub>Intelligent conversation routing with specialized domain agents. Dynamic LangGraph orchestration — agents that collaborate autonomously.</sub>
+<sub>**Problem:** Single LLMs fail at domain-switching mid-conversation. **Built:** A 5-node LangGraph supervisor graph that classifies intent and routes to specialized agents (HR, legal, tech support). **Result:** Clean hand-offs with shared memory state — no context loss between domains.</sub>
 
 <br/>
 
@@ -123,7 +122,7 @@ surya = {
 
 **AI Job Application Suite**
 
-<sub>Resume tailoring, cover letter gen & interview prep from one job description. Multi-agent CrewAI pipeline with parallel execution.</sub>
+<sub>**Problem:** Tailoring resumes per JD is slow and inconsistent. **Built:** A 3-agent CrewAI pipeline (resume analyst → cover letter writer → interview coach) that runs in parallel from a single JD input. **Result:** End-to-end application package generated in under 60 seconds.</sub>
 
 <br/>
 
@@ -139,7 +138,7 @@ surya = {
 
 **SecurePulse**
 
-<sub>Real-time threat detection platform with AI-assisted anomaly surfacing, vulnerability scanning, and live analytics dashboard.</sub>
+<sub>**Problem:** Security teams drown in raw event logs with no triage layer. **Built:** A real-time threat detection platform with AI-assisted anomaly scoring, CVE scanning, and a live analytics dashboard. **Result:** Surfaces critical alerts from noisy logs without manual filtering.</sub>
 
 <br/>
 
@@ -155,7 +154,7 @@ surya = {
 
 **Story Teller AI**
 
-<sub>Narrative engine for immersive multi-genre stories. Dynamic world-building, evolving characters, branching plots — powered by NLP.</sub>
+<sub>**Problem:** AI stories feel static — characters don't evolve, choices don't matter. **Built:** A branching narrative engine in TypeScript with stateful character memory and dynamic plot forking. **Result:** Multi-genre immersive stories where past choices visibly shape future branches.</sub>
 
 <br/>
 
@@ -204,17 +203,24 @@ surya = {
 
 ## &nbsp;`// Experience`
 
+<!-- FIX: Bullets now describe *what was shipped*, not just job title keywords -->
+
 ```
 2024 ──────────────────────────────────────────────────────────── present
 
   ◆  Product GenAI Developer Intern
-     HiDevs · San Francisco Bay Area (Remote)
+     HiDevs · Remote (SF Bay Area org)
      Nov 2024 → Present
 
-     ∟ Multi-agent AI orchestration (LangGraph, CrewAI)
-     ∟ Production RAG pipeline design & deployment
-     ∟ LLM R&D — fine-tuning, prompt engineering, evaluation
-     ∟ GenAI system architecture: concept → shipping
+     ∟ Architected multi-agent workflows using LangGraph & CrewAI;
+       designed supervisor routing graphs for domain-specific task delegation
+     ∟ Built and deployed production RAG pipelines on Oracle OCI with
+       FastAPI backends — vector search via Qdrant, chunking optimized
+       for retrieval precision
+     ∟ Conducted LLM evaluation runs (accuracy, hallucination rate, latency)
+       to benchmark prompt strategies across GPT-4o and open-source models
+     ∟ Took 2 GenAI features from prototype to deployed product,
+       including integration testing and user-facing API design
 
 2023 ──────────────────────────────────────────────────────────── 2024
 
@@ -222,8 +228,9 @@ surya = {
      Comedkares · Bengaluru, KA
      Sep 2023 → Jan 2024
 
-     ∟ Software development lifecycle exposure
-     ∟ Technology-driven project delivery
+     ∟ Contributed to full software development lifecycle across
+       internal tooling projects
+     ∟ Delivered technology-driven features under agile sprint cycles
 ```
 
 ---
@@ -261,10 +268,6 @@ surya = {
 </div>
 
 ---
-
-<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
-<!--                         FOOTER                              -->
-<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
 <br/>
 
