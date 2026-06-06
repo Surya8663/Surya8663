@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="280" height="280" viewBox="0 0 280 280">
+  <defs>
+    <clipPath id="avatar-clip">
+      <rect x="12" y="12" width="256" height="256" rx="18" ry="18"/>
+    </clipPath>
+    <style>
+      @keyframes rotateBorder {
+        0%   { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -1120; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; }
+        50%       { opacity: 0.8; }
+      }
+      @keyframes cornerPulse {
+        0%, 100% { opacity: 0.5; r: 3; }
+        50%       { opacity: 1; r: 4.5; }
+      }
+      .spin-border {
+        stroke-dasharray: 90 18;
+        stroke-dashoffset: 0;
+        animation: rotateBorder 4s linear infinite;
+      }
+      .glow-ring {
+        animation: pulseGlow 2.5s ease-in-out infinite;
+      }
+      .c-dot {
+        animation: cornerPulse 2.5s ease-in-out infinite;
+      }
+      .c-dot-2 { animation-delay: 0.6s; }
+      .c-dot-3 { animation-delay: 1.2s; }
+      .c-dot-4 { animation-delay: 1.8s; }
+    </style>
+  </defs>
+
+  <!-- Dark background -->
+  <rect x="0" y="0" width="280" height="280" rx="20" fill="#0a0f1e"/>
+
+  <!-- Outer faint glow ring -->
+  <rect x="3" y="3" width="274" height="274" rx="21" ry="21"
+        fill="none" stroke="#4A9EFF" stroke-width="1"
+        class="glow-ring"/>
+
+  <!-- Spinning dashed accent border -->
+  <rect x="5" y="5" width="270" height="270" rx="19" ry="19"
+        fill="none" stroke="#4A9EFF" stroke-width="2"
+        class="spin-border"/>
+
+  <!-- Second counter-spin (subtler, different color) -->
+  <rect x="7" y="7" width="266" height="266" rx="17" ry="17"
+        fill="none" stroke="#A78BFA" stroke-width="1"
+        stroke-dasharray="40 80"
+        stroke-dashoffset="0"
+        style="animation: rotateBorder 7s linear infinite reverse; opacity: 0.5;"/>
+
+  <!-- Avatar image -->
+  <image href="https://raw.githubusercontent.com/Surya8663/Surya8663/main/assets/avatar.png"
+         x="12" y="12" width="256" height="256"
+         clip-path="url(#avatar-clip)"
+         preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Corner accent dots — all 4 corners -->
+  <circle cx="5"   cy="5"   r="3" fill="#4A9EFF" class="c-dot c-dot-1"/>
+  <circle cx="275" cy="5"   r="3" fill="#4A9EFF" class="c-dot c-dot-2"/>
+  <circle cx="5"   cy="275" r="3" fill="#4A9EFF" class="c-dot c-dot-3"/>
+  <circle cx="275" cy="275" r="3" fill="#4A9EFF" class="c-dot c-dot-4"/>
+
+  <!-- Midpoint accent marks -->
+  <line x1="140" y1="3"   x2="140" y2="8"   stroke="#4A9EFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="140" y1="272" x2="140" y2="277" stroke="#4A9EFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="3"   y1="140" x2="8"   y2="140" stroke="#4A9EFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="272" y1="140" x2="277" y2="140" stroke="#4A9EFF" stroke-width="1.5" opacity="0.4"/>
+</svg>
